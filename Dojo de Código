@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+
+int ehPalindromo(char palavra[]) {
+
+}
+
+int main() {
+    char palavra[100];
+
+    printf("Digite uma palavra: ");
+    scanf("%s", palavra);
+
+    if (ehPalindromo(palavra)) {
+        printf("A palavra é um palíndromo.\n");
+    } else {
+        printf("A palavra não é um palíndromo.\n");
+    }
+
+    return 0;
+}
