@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main() {
+    int idade_pessoa;
+    setlocale(LC_ALL, "Portuguese");
+    printf("Informe a sua idade: ");
+    scanf("%d", &idade_pessoa);
+    if (idade_pessoa < 30) {
+        printf("Você é jovem demais.\n");
+    }
+
+    return 0;
+} 
