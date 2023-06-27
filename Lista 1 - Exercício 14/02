@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main() {
+    float altura, base, area;
+    setlocale(LC_ALL, "Portuguese");
+
+    printf("Informe a base do triângulo a ser utilizado: ");
+    scanf("%f", &base);
+    printf("Informe a altura do triângulo a ser utilizado: ");
+    scanf("%f", &altura);
+
+    area = (base * altura) / 2;
+
+    printf("A área final do triângulo é: %2.f\n", area);
+
+    return 0;
+} 
