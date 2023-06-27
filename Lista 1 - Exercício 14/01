@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main() {
+    setlocale(LC_ALL, "portuguese");
+    float n1, n2, n3, n4, n5, media;
+    printf("Informe a primeira nota da prova: ");
+    scanf("%f", &n1);
+    printf("Informe a segunda nota da prova: ");
+    scanf("%f", &n2);
+    printf("Informe a terceira nota da prova: ");
+    scanf("%f", &n3);
+    printf("Informe a quarta nota da prova: ");
+    scanf("%f", &n4);
+    printf("Informe a quinta nota da prova: ");
+    scanf("%f", &n5);
+
+    media = (n1 + n2 + n3 + n4 + n5) / 5;
+    printf("A média de todas as notas presentes é de: %.2f\n", media);
+
+    return 0;
+}
