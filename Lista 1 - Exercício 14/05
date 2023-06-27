@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main() {
+    float nf;
+    int presenca, aulas;
+    setlocale(LC_ALL, "Portuguese");
+
+    printf("Informe a sua nota final: ");
+    scanf("%f", &nf);
+    printf("Informe o total de aulas com presenca: ");
+    scanf("%d", &presenca);
+    printf("Informe o total de aulas do semestre: ");
+    scanf("%d", &aulas);
+
+    float frequencia = ((float)presenca / aulas) / 100;
+    if (frequencia >= 75 && nf >= 6.0) {
+        printf("Nota final: %.2f\n", nf);
+        printf("Total de presenças: %d/%d\n", presencas, aulas);
+        printf("Aluno aprovado.\n");
+    } else {
+        printf("Nota final: %.2f\n", nf);
+        printf("Total de presenças: %d/%d\n", presencas, aulas);
+        printf("Aluno reprovado.\n");
+    }
+    return 0;
+} 
